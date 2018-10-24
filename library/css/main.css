@@ -1,0 +1,269 @@
+
+/* Blanket classes */
+
+html {
+    height: 100%;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(245,245,245);
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+}
+
+.noSelect {
+  text-decoration: none;
+  color: rgb(35,35,35);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+.reactiveHover:hover{
+    transform: scale(1.1);
+}
+
+.gradientColorOrange{
+    background: rgb(228, 77, 38);
+    background: linear-gradient(to left, rgb(241, 101, 41), rgb(228, 77, 38));
+    background: -webkit-linear-gradient(to right, rgb(241, 101, 41), rgb(228, 77, 38));
+}
+
+.gradientColorGreen{
+    background: rgb(118, 184, 82);
+    background: linear-gradient(to left, rgb(141, 194, 111), rgb(118, 184, 82));
+    background: -webkit-linear-gradient(to right, rgb(141, 194, 111), rgb(118, 184, 82));
+}
+
+.gradientColorBlue{
+    background: rgb(0, 150, 255);
+    background: linear-gradient(to right, rgb(0, 125, 255), rgb(0, 170, 255));
+    background: -webkit-linear-gradient(to right, rgb(0, 114, 255), rgb(0, 150, 255));
+}
+
+.pageShade{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+    background-color: rgba(235,235,235,.75);
+}
+
+.shadow{
+    box-shadow: 0px 5px 10px rgba(45,45,45, .25);
+    -moz-box-shadow: 0px 5px 10px rgba(45,45,45, .25);
+    -webkit-box-shadow: 0px 5px 10px rgba(45,45,45, .25);
+}
+
+
+
+
+
+/* Internal absolute positioning */
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-right{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+
+
+
+
+/* Image and options */
+
+.imageContainer{
+    position: absolute;
+    display: inline;
+}
+
+.small-ImageContainer{
+    width: 256px;
+    height: 256px;
+}
+
+.smallImage{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.editImageOptionsContainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    color: rgb(35,35,35);
+    background-color: rgba(235,235,235, .6);
+}
+
+.editImageOptionsContainer:hover{
+    opacity: 1;
+}
+
+.imageOptionsMenu{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    z-index: 10;
+    display: none;
+    overflow: auto;
+}
+
+
+
+
+
+/* Canvas */
+
+.mainCanvas{
+    position: relative;
+    width: 800px;
+    height: 1200px;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border: 1px solid rgb(35,35,35);
+}
+
+
+
+
+
+/* Forms */
+
+.submitButton{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    border: 0px;
+    margin: 0px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: block; 
+    color: rgb(35,35,35);
+    background-color: rgb(240, 248, 255);
+}
+
+.submitButton:hover{
+    cursor: pointer;
+    padding: 10px;
+    margin-top: -2px;
+    margin-bottom: 16px;
+}
+
+.textField{
+    position: relative;
+    width: 80%;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 18px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(205,205,205);
+    font-size: 125%;
+    display: block;
+    background-color: rgba(255,255,255,1);
+}
+
+.textBox{
+    position: relative;
+    width: 80%;
+    min-height: 250px;
+    padding: 8px;
+    margin: auto;
+    margin-bottom: 18px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    overflow: auto;
+    display: block;
+    resize: none;
+}
+
+label.uploadLabel input[type="file"] {
+    position:absolute;
+    top: -1000px;
+}
+
+.uploadLabel{
+    position: relative;
+    display: block;
+    min-width: 80px;
+    max-width: 85%;
+    min-height: 35px;
+    max-height: 75%;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgb(240, 248, 255);
+}
+
+.imagePreview{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}

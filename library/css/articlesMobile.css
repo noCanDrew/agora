@@ -1,0 +1,107 @@
+.centerContainer{
+  position: absolute;
+  display: inline-block;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  font-size: 2em;
+  color: rgb(35,35,35);
+  background-color: rgb(245,245,245);
+  overflow: hidden;
+}
+
+.articleContainer{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 32px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.articleImageContainer{
+  position: absolute;
+  float: right;
+  width: 15%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.articleImage{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: auto;
+  height: 100%;
+}
+
+.articleBodyImage{
+  position: relative;
+  display: inherit;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 64px;
+}
+
+.articleTextContainer{
+  position: relative;
+  float: left;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+
+.socialMediaContainer{
+  position: relative;
+  float: none;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.socialMediaIconContainer{
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  color: rgb(245,245,245);
+  background-color: rgb(35,35,35);
+}
+
+.adContainer{
+  position: relative;
+  float: left;
+  height: auto;
+  padding: 32px;
+  box-shadow: 0 8px 18px -8px rgb(35,35,35);
+}
+
+.adImage{
+  position: relative;
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-right: 14px;
+}
+
+.adTextContainer{
+  position: relative;
+  float: left;
+  width: 68%;
+  height: auto;
+}
