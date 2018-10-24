@@ -3,7 +3,7 @@
 	include "library/dbInterface.php";
 	include "../../outerScripts/keys.php";
 
-	if($_GET["hash"] = $dailyArticlsUpdateHash){
+	if($_GET["hash"] = $dailyArticlesUpdateHash){
 		/* 
 			Get most popular wiki articles of the given day
 		*/
