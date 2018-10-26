@@ -6,18 +6,18 @@
 	*/
 
 	/*
-        Perform select to find articles for today
-    */
-    include "library/dbInterface.php";
-    $date = strtotime(date("Y-m-d") . " - 1 day");
+		Perform select to find articles for today
+	*/
+	include "library/dbInterface.php";
+	$date = strtotime(date("Y-m-d") . " - 1 day");
 	$date = date('Y/m/d', $date);
-    $table = "wikiArticle";
-    $cols = array("id", "imgUrl", "title", "text");
-    $where1 = array("date");
-    $where2 = array($date);
-    $limit = "10";
-    $orderBy = "id";
-    $articles = dbSelect($table, $cols, $where1, $where2, $limit, $orderBy, $dbc);
+	$table = "wikiArticle";
+	$cols = array("id", "imgUrl", "title", "text");
+	$where1 = array("date");
+	$where2 = array($date);
+	$limit = "10";
+	$orderBy = "id";
+	$articles = dbSelect($table, $cols, $where1, $where2, $limit, $orderBy, $dbc);
 
 	/*
 		Generate block of data for each article returned by above query
@@ -46,7 +46,7 @@
 		<link rel="stylesheet" href="library/css/main.css" type="text/css"/>
 		<link rel="stylesheet" href="library/css/articlesMobile.css" type="text/css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	</head>
 
 	<body>
