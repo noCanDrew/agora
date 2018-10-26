@@ -1,9 +1,9 @@
 <?php
-	error_reporting(0);
+	//error_reporting(0);
 	include "library/dbInterface.php";
 	include "../../outerScripts/keys.php";
 
-	if($_GET["hash"] = $dailyArticlesUpdateHash){
+	if(isset($_GET['hash']) && $_GET['hash'] == $dailyArticlesUpdateHash){
 		/* 
 			Get most popular wiki articles of the given day
 		*/
@@ -17,11 +17,11 @@
 
 		/*
 			- Skip first return because it is wiki homepage
-			- Skip "xHamster" specifically because the whole stego thing :/
+			- Skip "XHamster" specifically because the whole stego thing :/
 		*/
 		for($a = 1; $a <= 10; $a++){
 			$article = $raw[$a]["article"];
-			if($article != "Special:Search" && $article != "xHamster"){
+			if($article != "Special:Search" && $article != "XHamster"){
 				$articles .= $article . "|";
 			}
 		}
